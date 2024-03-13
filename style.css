@@ -1,21 +1,25 @@
 form {
     /* Center the form on the page */
     margin: 0 auto;
-    width: 300px;
+    width: 400px;
     /* Form outline */
     padding: 1em;
     border: 3px solid black;
     border-radius: 1em;
+    
   }
   
   ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 30px;
+    margin: 20px;
+    margin-top: 10px;
+  
   }
   
   form li + li {
     margin-top: 1em;
+    
     
 
   }
@@ -70,7 +74,7 @@ form {
   
   h1 {
     text-align: center;
-
+    font-size: 40px;
   }
 
   h2 {
@@ -78,11 +82,6 @@ form {
     
   }
 
-  img {
-    width: 100%;
-    height: 100%;
-  
-  }
 
 /* Reset default margin and padding for the social icons container */
 .social {
