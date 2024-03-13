@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry form</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Enquiry</h1>
+    </header>
+    <main>
+         <form onsubmit="sendEmail(); reset(); return false;">
+        
+            <h1>Get your quotation</h1>
+
+            <div class="dropdown">
+              <button class="dropdown-btn">Insurance</button>
+              <div class="dropdown-content">
+                <a href="#">Car Insurance</a>
+                <a href="#">Home Insurance</a>
+                <a href="#">Business Insurance</a>
+              </div>
+            </div>
+         
+            <ul>
+              <li>
+                <input type="text" id="name" placeholder="First Name" required />
+              </li>
+              <li>
+                <input type="email" id="mail" placeholder="E-Mail" required/>
+              </li>
+              <li>
+                <input type="text" id="name" placeholder="Contact No." required />
+              </li>
+              <li>
+                <textarea id="msg" placeholder="Message" required ></textarea>
+              </li>
+              <li class="button">
+                <button type="submit">Send</button>
+              </li>
+            </ul>
+
+            <div><h2>Connect with us</h2></div>
+  
+            <div class="social">
+              <a href="https://facebook.com" target="_blank">
+                  <img src="images/icons8-facebook-48.png" alt="fb icon">
+              </a>
+              <a href="https://twitter.com" target="_blank">
+                  <img src="images/icons8-twitterx-50.png" alt="twitter icon">
+              </a>
+              <a href="https://instagram.com" target="_blank">
+                  <img src="images/icons8-instagram-48.png" alt="instagram icon">
+              </a>
+              <a href="https://linkedin.com" target="_blank">
+                <img src="images/icons8-linkedin-48.png" alt="instagram icon">
+            </a>
+            
+          </div>
+          
+          </form>
+    </main>    
+    <script src="enquiry.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script> 
+    <script>
+        function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "buckmarley16@gmail.com",
+        Password : "Suuwhoopbanger/1501",
+        To : "matthew.chipeta@yahoo.com",
+        From : document.getElementById("email").value,
+        Subject : "New Enquiry",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+}
+    </script> 
+</body>
+</html>
