@@ -8,21 +8,17 @@
 </head>
 <body>
     <header>
-        <h1>The Insurance Broker</h1>
+        <h1>Get your Insurance quote today</h1>
     </header>
   
         <form onsubmit="sendEmail(); reset(); return false">
-          <h1>Get your quotation</h1>
 
-          <div class="dropdown">
-            <button class="dropdown-btn">Insurance</button>
-            <div class="dropdown-content">
-              <a href="#">Car Insurance</a>
-              <a href="#">Home Insurance</a>
-              <a href="#">Business Insurance</a>
-            </div>
+          <div class="aboutpage">
+            <a href="https://theinsurancebroker7.wordpress.com/" target="_blank">
+              <img src="images/IMG-20240307-WA0028.jpg" alt="insure logo">
+          </a>
           </div>
-       
+         
           <ul>
             <li>
               <input type="text" id="fullname" placeholder="Full Name" required />
@@ -32,6 +28,15 @@
             </li>
             <li>
               <input type="text" id="phone" placeholder="Contact No." required />
+
+            </li>
+            <li>
+              <select id="selectOption" name="selectOption">
+                <option value="option1">Vehicle insurance</option>
+                <option value="option2">Life insurance</option>
+                <option value="option3">Commercial insurance</option>
+                <option value="option4">Home insurance</option>
+              </select>
             </li>
             <li>
               <textarea id="msg" placeholder="Message" required ></textarea>
@@ -42,7 +47,7 @@
           </ul>
 
           <div><h2>Connect with us</h2></div>
-
+          
           <div class="social">
             <a href="https://whatsapp.com" target="_blank">
               <img src="images/icons8-whatsapp-48.png" alt="whatsapp icon">
