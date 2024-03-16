@@ -110,9 +110,11 @@ form {
 
 .aboutpage img {
   display: inline-block;
-  justify-content: center;
-width: 190px;
-  border-radius: 50%; /* Create a circular shape */
+  width: 220px;
+  margin-left: 90px;
+  margin-bottom: -80px;
+  margin-top: -15px;
+  border-radius: 100%; /* Create a circular shape */
   transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
 }
 
