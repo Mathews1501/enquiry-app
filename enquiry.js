@@ -1,79 +1,24 @@
-document.getElementById('queryForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission
+const fullname = document.getElementById('fullname');
+const mail = document.getElementById('mail');
+const phone = document.getElementById('phone');
+const message = document.getElementById('message');
+const submit = document.getElementsByClassName('enquiry-app')[0];
 
-    // Get form data
-    const formData = new FormData(this);
+submit.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    console.log('Clicked');
 
-    // Convert form data to JSON
-    const jsonData = {};
-    formData.forEach((value, key) => {
-        jsonData[key] = value;
-    });
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "mattiesswebdev@gmail.com",
+        Password : "54561EB8690093B5D6B0D8DF822D87ABD3A1",
+        To : 'mattiesswebdev@gmail.com',
+        From : "mattiesswebdev@gmail.com",
+        Subject : "Test email from js",
+        Body : "this is the test email"
+    }).then(
+      message => alert(message)
+    );
+})
 
-    // Send data to server
-    fetch('/send-email', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(jsonData)
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
-    .then(data => {
-        alert('Message sent successfully!');
-        // You can do additional actions here if needed
-    })
-    .catch(error => {
-        console.error('There was a problem with your fetch operation:', error);
-        alert('Failed to send message. Please try again later.');
-    });
-});
-
-
-
-const express = require('express');
-const nodemailer = require('nodemailer');
-const bodyParser = require('body-parser');
-
-const app = express();
-const port = 3000;
-
-app.use(bodyParser.json());
-
-app.post('/send-email', (req, res) => {
-    const { name, email, message } = req.body;
-
-    const transporter = nodemailer.createTransport({
-        service: 'Gmail',
-        auth: {
-            user: 'matthewchipeta@outlook.com',
-            pass: 'Suuwhoopbanger/1501'
-        }
-    });
-
-    const mailOptions = {
-        from: 'matthewchipeta@outlook.com',
-        to: 'buckmarley16@gmail.com',
-        subject: 'New Query',
-        text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
-    };
-
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            console.error('Error sending email:', error);
-            res.status(500).json({ success: false, message: 'Failed to send email' });
-        } else {
-            console.log('Email sent:', info.response);
-            res.json({ success: true, message: 'Email sent successfully' });
-        }
-    });
-});
-
-app.listen(port, () => {
-    console.log(`Server listening at http://localhost:${port}`);
-});
+// 54561EB8690093B5D6B0D8DF822D87ABD3A1

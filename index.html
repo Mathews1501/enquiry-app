@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enquiry form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
   
-  <form id="queryForm">
+  <form action="#" class="enquiry-app">
     
         <header>
         <h1>Get your Insurance quote today</h1>
@@ -39,11 +40,13 @@
               </select>
             </li>
             <li>
-              <textarea id="msg" placeholder="Message" required ></textarea>
+              <textarea id="message" placeholder="Message" required ></textarea>
             </li>
-            <li class="button">
-              <button type="submit">Submit</button>
+            <li>
+              <input id="submit" type="submit">
             </li>
+              
+          
           </ul>
 
           <div><h2>Connect with us</h2></div>
@@ -69,7 +72,7 @@
         
         </form>
            
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        
         <script src="enquiry.js"></script>
 
   </body>
