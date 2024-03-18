@@ -5,7 +5,7 @@ form {
     
     /* Form outline */
     padding: 1em;
-    border: 3px solid black;
+    border: 3px solid rgb(240, 8, 8);
     border-radius: 1em;
     
     }
@@ -15,11 +15,13 @@ form {
     padding: 30px;
     margin: 20px;
     margin-top: 10px;
+    
   
   }
   
   form li + li {
     margin-top: 1em;
+    
     
   }
   
@@ -27,14 +29,14 @@ form {
   textarea {
     /* To make sure that all text fields have the same font settings
        By default, textareas have a monospace font */
-    font: 1em sans-serif; 
+    font: 1em sans-serif;
   
     /* Uniform text field size */
     width: 300px;
     box-sizing: border-box;
   
     /* Match form field borders */
-    border: 2px solid #0a0a0a;
+    border: 2px solid #15055a;
     border-radius: 20px;
     padding: 5px;
   }
@@ -65,17 +67,21 @@ form {
        between the labels and their text fields */
     cursor: pointer;
     border-radius: 20px;
-    width: 100px;
-    border: 2px solid;
+    width: 120px;
+    border: 2px solid #15055a;
     justify-content: center;
+    font-size: 20px;
+    
+
 
   }
   
   h1 {
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     position: relative;
-    margin-top: 70px; 
+    margin-top: 70px;
+    
   }
 
   h2 {
@@ -131,7 +137,7 @@ form {
     box-sizing: border-box;
   
     /* Match form field borders */
-    border: 2px solid #0a0a0a;
+    border: 2px solid #15055a;
     border-radius: 20px;
     padding: 5px;
 
