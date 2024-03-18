@@ -14,7 +14,7 @@ submit.addEventListener('submit',(e)=>{
         Password : "54561EB8690093B5D6B0D8DF822D87ABD3A1",
         To : 'mattiesswebdev@gmail.com',
         From : "mattiesswebdev@gmail.com",
-        Subject : "Test email from js",
+        Subject : "Test email from Matt's enquiry app",
         Body : "this is the test email"
     }).then(
       message => alert(message)
