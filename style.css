@@ -151,3 +151,53 @@ form {
     box-shadow: 1px 1px 5px black;
 
 }
+
+/* Default styles */
+
+/* Media query for screens smaller than 768px (e.g., smartphones) */
+@media (max-width: 767px) {
+  /* Styles for small screens */
+  body {
+    font-size: 14px; /* Adjust font size for better readability */
+  }
+
+  .container {
+    padding: 0 10px; /* Adjust container padding for smaller screens */
+  }
+
+  /* Example: Hide a certain element on small screens */
+  .element-to-hide {
+    display: none;
+  }
+}
+
+/* Media query for screens between 768px and 1023px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for medium-sized screens */
+  body {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .container {
+    max-width: 90%; /* Adjust container width */
+  }
+
+  /* Example: Change column layout for medium-sized screens */
+  .col {
+    flex: 1 0 50%; /* Make columns 50% width */
+  }
+}
+
+/* Media query for screens larger than 1023px (e.g., desktops) */
+@media (min-width: 1024px) {
+  /* Styles for large screens */
+  body {
+    font-size: 18px; /* Adjust font size */
+  }
+
+  /* Example: Increase padding on large screens */
+  .container {
+    padding: 0 30px; /* Adjust container padding */
+  }
+}
+
