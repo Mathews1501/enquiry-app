@@ -1,10 +1,3 @@
-/* Grid container */
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr; /* Columns with minimum width of 200px and maximum width of 1fr */
-  padding: 20px;
-
-}
 
 form {
     /* Center the form on the page */
@@ -20,7 +13,6 @@ form {
     position: relative;
     overflow: hidden;
     
-  
     }
   
   ul {
@@ -164,7 +156,11 @@ form {
 }
 
 header {
-
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 100%;
+  padding-bottom: 10px;
+  
 ul {
   list-style-type:none;
   margin: 0;
@@ -191,7 +187,6 @@ li a:hover {
   background-color: #a80303;
   
 }
-padding-bottom: 10px;
 
 }
 
