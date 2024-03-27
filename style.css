@@ -1,18 +1,11 @@
 /* Grid container */
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Columns with minimum width of 200px and maximum width of 1fr */
-  grid-gap: 20px; /* Gap between grid items */
+  grid-template-columns: 1fr; /* Columns with minimum width of 200px and maximum width of 1fr */
   padding: 20px;
-}
-
-/* Grid items */
-.grid-item {
-  background-color: #f2f2f2;
-  padding: 20px;
-  text-align: center;
 
 }
+
 form {
     /* Center the form on the page */
     margin: 0 auto;
@@ -100,11 +93,6 @@ form {
     margin-top: 1s0px;
   }
 
-  h1.steps{
-    position: relative;
-    font-size: 30px;
-  }
-
   h2 {
     text-align: center;
     margin-top: -20px;
@@ -172,16 +160,19 @@ form {
     border-radius: 20px;
     padding: 5px;
     box-shadow: 1px 1px 5px black;
-
+    cursor: pointer;
 }
 
 header {
+
 ul {
-  list-style-type: none;
+  list-style-type:none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #15055a;
+  background: rgb(255,0,0);
+background: linear-gradient(90deg, rgba(255, 0, 0, 0.753) 24%, rgba(16,0,143,0.969625350140056) 65%);
+ 
 }
 
 li {
@@ -197,9 +188,20 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #a80303;
+  
 }
-padding-bottom: 20px;
+padding-bottom: 10px;
+
+}
+
+p {
+  color: white;
+  
+  
+  text-align: center;
+  float: left;
+
 }
 
 
