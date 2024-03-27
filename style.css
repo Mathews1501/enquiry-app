@@ -204,4 +204,36 @@ p {
 
 }
 
+/* CSS styles for all devices */
+
+/* Media query for mobile phones */
+@media only screen and (max-width: 767px) {
+  /* CSS styles for mobile phones go here */
+  /* For example: */
+  body {
+      font-size: 14px;
+  }
+  /* Add more styles as needed */
+}
+
+/* Media query for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* CSS styles for tablets go here */
+  /* For example: */
+  body {
+      font-size: 16px;
+  }
+  /* Add more styles as needed */
+}
+
+/* Media query for PC screens */
+@media only screen and (min-width: 1024px) {
+  /* CSS styles for PC screens go here */
+  /* For example: */
+  body {
+      font-size: 18px;
+  }
+  /* Add more styles as needed */
+}
+
 
