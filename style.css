@@ -132,11 +132,12 @@ h1, h2, h6 {
 .aboutpage img {
   display: inline-block;
   width: 600px;
-  margin-left: -80px;
+  margin-left: -100px;
   margin-bottom: -250px;
   margin-top: -210px;
   border-radius: 100%;
   transition: transform 0.3s ease-in-out;
+  
 }
 
 /* Select Option Styles */
