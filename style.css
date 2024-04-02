@@ -46,14 +46,15 @@ nav {
 }
 
 .nav-container li a:hover {
-  background-color: #a80303;
+  background-color: #f1eded93;
+  border-radius: 20px;
 }
 
 /* Add animation to the paragraph */
 .nav-container p {
   color: white;
   margin-right: 10px;
-  animation: slideIn 1s ease forwards; /* Apply animation */
+  animation: slideIn 8s ease forwards; /* Apply animation */
 }
 
 /* animation for paragraph in header */
@@ -68,15 +69,10 @@ nav {
   }
 }
 
-
-header ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background: rgb(255,0,0);
-  background: linear-gradient(90deg, rgba(255, 0, 0, 0.753) 24%, rgba(16,0,143,0.969625350140056) 65%);
+p{
+ font-size: 15px;
 }
+
 
 header li {
   float: right;
