@@ -211,6 +211,21 @@ footer {
 @media only screen and (max-width: 1024px) {
   body {
       font-size: 5px;
+      
   }
+
+  .social img{
+  width: 10px;
+  height: 10px;
+ }
+
+ form{
+  width: 280px;
+ }
+
+ .aboutpage img {
+ padding-left: -50px;
+
 }
 
+}
