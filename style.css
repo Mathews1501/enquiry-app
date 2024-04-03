@@ -54,7 +54,7 @@ nav {
 .nav-container p {
   color: white;
   margin-right: 10px;
-  animation: slideIn 8s ease forwards; /* Apply animation */
+  animation: slideIn 10s ease forwards; /* Apply animation */
 }
 
 /* animation for paragraph in header */
@@ -100,9 +100,9 @@ form {
   border-radius: 1em;
   box-shadow: 1px 1px 8px black;
   position: relative;
-  overflow: hidden;
-  
+  overflow: hidden;  
 }
+
 
 form ul {
   list-style: none;
@@ -208,8 +208,9 @@ footer {
 }
 
 /* Media Queries */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   body {
-      font-size: 14px;
+      font-size: 5px;
   }
 }
+
