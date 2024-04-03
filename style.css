@@ -149,6 +149,7 @@ button {
   box-shadow: 1px 1px 5px black;
 }
 
+
 h1, h2, h6 {
   text-align: center;
   position: relative;
@@ -213,6 +214,14 @@ footer {
       font-size: 5px;
   }
 
+  h1{
+    font-size: 15px;
+  }
+
+  h2{
+    font-size: 8px;
+  }
+
   .social img{
   width: 15px;
   height: 15px;
@@ -241,7 +250,7 @@ form li + li {
 }
 
 input, textarea, select {
-  font: 1em sans-serif;
+  font: 2em sans-serif;
   width: 100%; /* Make inputs full width */
   box-sizing: border-box;
   border: 2px solid #15055a;
@@ -281,6 +290,18 @@ header li {
 
 p{
   font-size: 8px;
+}
+
+/* Select Option Styles */
+#selectOption {
+  font: 2em sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #15055a;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: 1px 1px 5px black;
+  cursor: pointer;
 }
 
 }
