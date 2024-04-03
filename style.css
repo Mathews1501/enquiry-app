@@ -150,9 +150,22 @@ button {
 }
 
 
-h1, h2, h6 {
+h1{
   text-align: center;
   position: relative;
+}
+
+h2{
+  text-align: center;
+  position: relative;
+  margin-bottom: 0%;
+}
+
+h6 {
+  text-align: center;
+  position: relative;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 
 /* Social Icons Styles */
@@ -184,7 +197,7 @@ h1, h2, h6 {
 .aboutpage img {
   display: inline-block;
   width: 600px;
-  margin-left: -100px;
+  margin-left: -21%;
   margin-bottom: -250px;
   margin-top: -210px;
   border-radius: 100%;
@@ -202,16 +215,19 @@ h1, h2, h6 {
   padding: 5px;
   box-shadow: 1px 1px 5px black;
   cursor: pointer;
+
 }
 
 /* Footer Styles */
 footer {
   text-align: center;
+  font-size: 10px;
 }
 
 /* Media Queries */
 @media only screen and (max-width: 1080px) {
   body {
+    width: 100%;
       font-size: 5px;
   }
 
@@ -221,6 +237,12 @@ footer {
 
   h2{
     font-size: 8px;
+    margin-bottom: 0%;
+  }
+
+  h6{
+    font-size: 6px;
+    margin-top: 0%;
   }
 
   .social img{
