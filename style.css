@@ -227,8 +227,6 @@ footer {
 /* Media Queries */
 @media only screen and (max-width: 1080px) {
   body {
-    margin-right: 0%;
-    margin-left: 0%;
     width: 100%;
       font-size: 5px;
   }
