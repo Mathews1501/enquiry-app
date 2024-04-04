@@ -33,7 +33,15 @@ document.addEventListener('DOMContentLoaded', function() {
           Subject : "New quotation notification",
           Body : ebody
       }).then(
-        message => alert("Quotation sent and recieved successfully")
+        message => {
+          if (message == "OK"){
+            Swal.fire({
+              title: "Submitted successfully!",
+              text: "The insurance broker has recieved your quotation",
+              icon: "success"
+            });
+          }
+        }
       );
   });
 });
