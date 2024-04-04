@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Your JavaScript code here
+  
   const fullname = document.getElementById('fullname');
   const mail = document.getElementById('mail');
   const phone = document.getElementById('phone');
