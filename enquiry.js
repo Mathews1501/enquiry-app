@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
           if (message == "OK"){
             Swal.fire({
               title: "Submitted successfully!",
-              text: "The insurance broker has recieved your quotation",
+              text: "The insurance broker has received your quotation",
               icon: "success"
             });
           }
