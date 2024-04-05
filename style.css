@@ -55,6 +55,7 @@ nav {
   color: white;
   margin-right: 10px;
   animation: slideIn 10s ease forwards; /* Apply animation */
+  animation-iteration-count: infinite;
 }
 
 /* animation for paragraph in header */
@@ -224,6 +225,34 @@ footer {
   font-size: 10px;
 }
 
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  color: #007bff;
+}
+
+
+
 /* Media Queries */
 @media only screen and (max-width: 1080px) {
   body {
@@ -346,3 +375,4 @@ footer h1{
 }
 
 }
+
