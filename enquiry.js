@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
       Email.send({
           Host : "smtp.elasticemail.com",
-          Username : "mattiesswebdev@gmail.com",
-          Password : "54561EB8690093B5D6B0D8DF822D87ABD3A1",
-          To : 'mattiesswebdev@gmail.com',
-          From : "mattiesswebdev@gmail.com",
+          Username : "david@theinsurancebroker.org",
+          Password : "587FA3993986616DB2774CF777AD46D7C363",
+          To : 'david@theinsurancebroker.org',
+          From : "david@theinsurancebroker.org",
           Subject : "New quotation notification",
           Body : ebody
       }).then(
@@ -47,5 +47,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// 54561EB8690093B5D6B0D8DF822D87ABD3A1
+// 587FA3993986616DB2774CF777AD46D7C363
 
