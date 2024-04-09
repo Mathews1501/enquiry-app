@@ -74,7 +74,7 @@ nav {
 }
 
 p{
- font-size: 15px;
+ font-size: 18px;
 }
 
 
@@ -236,7 +236,7 @@ footer {
   display: none;
   position: absolute;
   background-color: #fff;
-  border: 1px solid #ccc;
+  border-radius: 20px;
   padding: 10px;
   z-index: 1;
 }
@@ -278,8 +278,8 @@ footer {
   }
 
   .social img{
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   box-shadow: 5px 5px 10px #6f7364;
  }
 
@@ -340,8 +340,9 @@ button {
 }
 
 header li {
-  float: right;
-  font-size: 10px;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
 }
 
 header li a {
@@ -350,6 +351,8 @@ header li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  justify-content: center;
+  align-items: center;
 }
 
 header li a:hover {
@@ -358,7 +361,8 @@ header li a:hover {
 
 
 p{
-  font-size: 8px;
+  font-size: 10px;
+
 }
 
 /* Select Option Styles */
