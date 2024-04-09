@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/956d5f41-cc78-4274-bb60-7b865c2b52f3/resourceGroups/TheInsurancebrokergroup/providers/Microsoft.Web/sites/Theinsurancebroker",
+    "appService.deploySubpath": "."
+}
