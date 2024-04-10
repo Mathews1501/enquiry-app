@@ -40,11 +40,19 @@ document.addEventListener('DOMContentLoaded', function() {
               text: "The insurance broker has received your quotation",
               icon: "success"
             });
+            // reset to default after i submit my quote
+            message.value ="";
+            fullname.value = "";
+            mail.value = "";
+            phone.value = "";
+            
           }
         }
       );
   });
 });
+
+
 
 
 // 587FA3993986616DB2774CF777AD46D7C363
