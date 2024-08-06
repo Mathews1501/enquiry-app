@@ -272,6 +272,7 @@ h6 {
 footer p{
   padding-top: 30px;
   color:#fff;
+ 
 }
 
 .dropdown:hover .dropdown-menu {
@@ -308,6 +309,7 @@ footer p{
     width: 100%;
       font-size: 5px;
       min-height: 100vh;
+
   }
 
 
@@ -321,15 +323,15 @@ svg{
     align-items: center;
     justify-content: center;
     align-content: center;
-    
+    position: relative;
     
   }
 
   .sidebar{
     position: fixed;
     margin-top: 0;
-    margin-right: 182px;
-    height: 100vh;
+    margin-right: 142px;
+    height: auto;
     width: 200px;
     z-index: 999;
     display: none;
@@ -367,7 +369,7 @@ svg{
   }
 
   h2{
-    font-size: 8px;
+    font-size: 12px;
     margin-bottom: 0%;
   }
 
@@ -385,6 +387,7 @@ svg{
  form{
   width: 280px;
   border-radius: 20px;
+  
  }
 
  .aboutpage img {
@@ -481,6 +484,7 @@ footer p{
   margin-top: 30px;
   padding-top: 30px;
 color:#fff;
+
 }
 
 }
