@@ -321,16 +321,18 @@ svg{
     align-items: center;
     justify-content: center;
     align-content: center;
-    position: relative;
-    
   }
+
+  li[onclick="hideSidebar()"] {
+    
+}
+
 
   .sidebar{
     position: fixed;
     margin-top: 0;
-    margin-right: 142px;
     height: auto;
-    width: 200px;
+    width: auto;
     z-index: 999;
     display: none;
     flex-direction: column;
@@ -385,7 +387,7 @@ svg{
  form{
   width: 300px;
   border-radius: 20px;
-  min-height: 100vh;
+  
  }
 
  .aboutpage img {
