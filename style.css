@@ -327,7 +327,7 @@ svg{
   .sidebar{
     position: fixed;
     margin-top: 0;
-    height: auto;
+    min-height: auto;
     width: auto;
     z-index: 999;
     display: none;
