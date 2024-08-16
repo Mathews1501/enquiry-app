@@ -243,7 +243,6 @@ h6 {
   transform: scale(1.2);
 }
 
-/* About Page Styles */
 .aboutpage img {
   display: inline-block;
   width: 600px;
@@ -255,7 +254,6 @@ h6 {
   
 }
 
-/* Select Option Styles */
 #selectOption {
   font: 1em sans-serif;
   width: 100%;
@@ -385,13 +383,14 @@ svg{
  }
 
  form{
-  width: 280px;
+  width: 300px;
   border-radius: 20px;
-  
+  min-height: 100vh;
  }
 
  .aboutpage img {
  margin-left: -50%;
+ 
  
 }
 
