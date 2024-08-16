@@ -321,11 +321,8 @@ svg{
     align-items: center;
     justify-content: center;
     align-content: center;
+    margin-left: 300px;
   }
-
-  li[onclick="hideSidebar()"] {
-    
-}
 
 
   .sidebar{
